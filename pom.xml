@@ -13,7 +13,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.ladstatt</groupId>
 	<artifactId>scala-jfx-skel</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<name>Scala JavaFX project</name>
 	<description>A skeleton for scala jfx projects with scalatest</description>
 	<inceptionYear>2012</inceptionYear>
