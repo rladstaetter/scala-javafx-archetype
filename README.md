@@ -3,10 +3,6 @@ Scala JFX Skel
 
 This project is a maven archetype which creates a simple Helloworld project for Scala, Maven and JavaFX.
 
-If you want to have a jumpstart for developing JavaFX with Scala and Maven, just enter
-
-	mvn archetype:generate -DarchetypeGroupId=net.ladstatt -DarchetypeArtifactId=scala-jfx-skel -DarchetypeVersion=0.1
-
 Prerequisites
 =============
 
@@ -22,3 +18,6 @@ For Windows users:
 Please make sure you have installed the "right" java installation for your architecture (x86 or x64)
 
 
+If you want to have a jumpstart for developing JavaFX with Scala and Maven, just enter
+
+	mvn archetype:generate -DarchetypeGroupId=net.ladstatt -DarchetypeArtifactId=scala-javafx-archetype -DarchetypeVersion=0.1
