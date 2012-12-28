@@ -17,10 +17,15 @@ For Windows users:
 
 Please make sure you have installed the "right" java installation for your architecture (x86 or x64)
 
+Until this project is hosted properly in maven central, you have to checkout this project and call
 
-If you want to have a jumpstart for developing JavaFX with Scala and Maven, just enter
+	mvn install
 
-	mvn archetype:generate -DarchetypeGroupId=net.ladstatt -DarchetypeArtifactId=scala-javafx-archetype -DarchetypeVersion=0.1
+After that you can use the archetype.
+
+A jumpstart for developing JavaFX with Scala and Maven is now possible by entering
+
+	mvn archetype:generate -DarchetypeGroupId=net.ladstatt -DarchetypeArtifactId=scala-javafx-archetype -DarchetypeVersion=0.1-SNAPSHOT
 
 This will create a new maven project in a subdirectory relative to the place you've called the command above. Change to this directory and enter
 
@@ -34,4 +39,3 @@ entering
 (Of course you have to adapt the jar filename!)
 
 Enjoy!
-
