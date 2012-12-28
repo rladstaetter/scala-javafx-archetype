@@ -26,13 +26,9 @@
 	<name>Scala JavaFX Archetype</name>
 	<description>The Scala JavaFX Archetype provides a simple template for a scala based 
 	JavaFX project</description>
+	<packaging>maven-archetype</packaging>
 	<inceptionYear>2012</inceptionYear>
 	<url>http://github.com/rladstaetter/scala-javafx-archetype</url>
-	<packaging>maven-archetype</packaging>
-
-	<organization>
-		<name>Your Company</name>
-	</organization>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
