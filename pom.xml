@@ -21,7 +21,7 @@
 	</parent>
 	<groupId>net.ladstatt</groupId>
 	<artifactId>scala-javafx-archetype</artifactId>
-	<version>0.1</version>
+	<version>0.2-SNAPSHOT</version>
 	<name>Scala JavaFX Archetype</name>
 	<description>The Scala JavaFX Archetype provides a simple template for a scala based 
 	JavaFX project</description>
