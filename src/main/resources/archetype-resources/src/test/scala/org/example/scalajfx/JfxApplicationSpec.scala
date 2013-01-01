@@ -18,7 +18,7 @@ class JfxApplicationSpec extends FlatSpec with ShouldMatchers {
     println(b.asText().text())
   }
 
-  "hellow world" should "be shown on the console." in {
+  "hello world" should "be shown ten times on the console." in {
     val mouseAtButton = new LabeledDock(scene.asParent()).mouse()
     for (i <- 1 to 10) mouseAtButton.click
   }
