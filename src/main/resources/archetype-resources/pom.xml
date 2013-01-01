@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>${groupId}</groupId>
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 	<name>${artifactId}</name>
+	<!-- <groupId>g</groupId> <artifactId>a</artifactId> <version>1.0-SNAPSHOT</version> -->
 	<description>A simple Scala JavaFX application</description>
 	<inceptionYear>2012</inceptionYear>
 	<packaging>jar</packaging>
@@ -18,7 +20,22 @@
 		<javafx.version>2.2.4</javafx.version>
 		<scala.version>2.9.2</scala.version>
 		<scalatest.version>2.0.M4</scalatest.version>
+		<jemmyFX.version>0.9.3-SNAPSHOT</jemmyFX.version>
 	</properties>
+
+	<!-- for jemmyFX - until JemmyFX is released -->
+	<repositories>
+		<repository>
+			<id>sonatype snapshots</id>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<sourceDirectory>src/main/scala</sourceDirectory>
@@ -125,6 +142,38 @@
 			<groupId>org.scala-lang</groupId>
 			<artifactId>scala-library</artifactId>
 			<version>${scala.version}</version>
+		</dependency>
+
+		<!-- for unit testing javafx applications -->
+		<dependency>
+			<groupId>net.java.jemmy</groupId>
+			<artifactId>JemmyFX</artifactId>
+			<version>${jemmyFX.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.java.jemmy</groupId>
+			<artifactId>JemmyFXBrowser</artifactId>
+			<version>${jemmyFX.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.java.jemmy</groupId>
+			<artifactId>Jemmy3Core</artifactId>
+			<version>${jemmyFX.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.java.jemmy</groupId>
+			<artifactId>Jemmy3AWT</artifactId>
+			<version>${jemmyFX.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.java.jemmy</groupId>
+			<artifactId>Jemmy3AWTInput</artifactId>
+			<version>${jemmyFX.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
