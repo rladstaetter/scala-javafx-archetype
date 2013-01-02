@@ -7,6 +7,13 @@ A jumpstart for developing JavaFX with Scala and Maven is possible by entering
 
 	mvn archetype:generate -DarchetypeGroupId=net.ladstatt -DarchetypeArtifactId=scala-javafx-archetype -DarchetypeVersion=0.1
 
+Or, if you want to have the latest development version:
+
+	mvn archetype:generate -DarchetypeCatalog=https://oss.sonatype.org/content/repositories/snapshots -DarchetypeGroupId=net.ladstatt -DarchetypeArtifactId=scala-javafx-archetype -DarchetypeVersion=0.2-SNAPSHOT
+
+(Disclaimer: the test seems to have problems on MacOsX when called from command line, under windows (or used in Eclipse on MacOsX) 
+it runs through without problems)
+
 After answering some basic questions, this will create a new maven project in a subdirectory relative to the place you've called the 
 command above. Before you can continue, make sure to have the javafx runtime libraries in your classpath. Another maven plugin ensures 
 this by entering
