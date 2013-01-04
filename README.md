@@ -1,7 +1,8 @@
 Scala JavaFX Archetype 
 ======================
 
-This project is a maven archetype which creates a simple Helloworld project for Scala, Maven and JavaFX.
+This project is a maven archetype which creates a simple Helloworld project for Scala, Maven and JavaFX, showcasing a 
+test scenario with JemmyFX and ScalaTest.
 
 A jumpstart for developing JavaFX with Scala and Maven is possible by entering
 
