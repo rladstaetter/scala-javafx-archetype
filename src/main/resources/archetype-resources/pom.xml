@@ -142,7 +142,7 @@
 			<version>${scala.version}</version>
 		</dependency>
 
-		<!-- for unit testing javafx applications -->
+		<!-- for testing javafx applications -->
 		<dependency>
 			<groupId>net.java.jemmy</groupId>
 			<artifactId>JemmyFX</artifactId>
