@@ -19,7 +19,7 @@ After answering some basic questions, this will create a new maven project in a 
 command above. Before you can continue, make sure to have the javafx runtime libraries in your classpath. Another maven plugin ensures 
 this by entering
 
-	mvn com.zenjava:javafx-maven-plugin:1.3:fix-classpath
+	mvn com.zenjava:javafx-maven-plugin:1.5:fix-classpath
 
 (More information about this plugin is provided here: http://www.zenjava.com/2012/11/24/from-zero-to-javafx-in-5-minutes/. Also please
 make sure you've installed a recent jdk (1.7.0_09 or higher))
