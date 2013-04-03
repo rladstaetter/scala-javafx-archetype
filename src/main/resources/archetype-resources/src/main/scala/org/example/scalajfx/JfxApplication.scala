@@ -23,13 +23,13 @@ object JfxApplication {
 class JfxApplication extends javafx.application.Application {
 
   override def start(primaryStage: Stage): Unit = {
-    primaryStage.setTitle("HelloWorld");
-    val root = new StackPane();
-    primaryStage.setScene(new Scene(root));
+    primaryStage.setTitle("HelloWorld")
+    val root = new StackPane()
+    primaryStage.setScene(new Scene(root))
     val page = FXMLLoader.load(classOf[JfxApplication].getResource("/skel.fxml"), null, new JavaFXBuilderFactory()).asInstanceOf[Parent]
     primaryStage.getScene().setRoot(page)
     primaryStage.sizeToScene()
-    primaryStage.show();
+    primaryStage.show()
   }
 
 }
